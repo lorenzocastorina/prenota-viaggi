@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+.primary {
+    background: #003580;
+}
+
+.secondary {
+    background: #0077cc;
+}
+
+.third {
+    background: #001b42;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.primary .mat-stroked-button {      /* tutti i bottoni che sono contenuti in un div che ha classe primary */
+    border: 1px solid #fff !important
+}
+
+.p10h {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.m10w {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+.light {
+    background: #f7f7f7;
+}
+
+button:focus {outline:0;}

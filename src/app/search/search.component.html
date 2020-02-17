@@ -1,0 +1,47 @@
+<div class="row light p10h">
+  <div class="col-10 offset-1">
+    <h2>Trova offerte su hotel, case e tanto altro...</h2>
+    <p>
+      Comodi appartamenti al mare, fantastici chalet in montagna e tanto altro
+    </p>
+
+    <div class="col-12">
+      <form [formGroup]="form" class="form-inline row" (ngSubmit)="submit()">
+        <mat-form-field class="col-4">
+          <input
+            type="text"
+            matInput
+            placeholder="Dove vuoi andare?"
+            formControlName="where"
+          />
+        </mat-form-field>
+
+        <mat-form-field class="col-3">
+          <input
+            matInput
+            [matDatepicker]="picker"
+            placeholder="Scegli una data"
+            formControlName="when"
+          />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field class="col-3">
+          <mat-label>Persone</mat-label>
+          <select matNativeControl formControlName="howMany">
+            <option value="adult">Adulto</option>
+            <option value="adult_children">Adulto più bambini</option>
+          </select>
+        </mat-form-field>
+
+        <div class="col-2">
+            <button type="submit" mat-raised-button class="secondary text-white w-100">Cerca</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
