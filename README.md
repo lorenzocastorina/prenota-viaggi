@@ -1,23 +1,19 @@
 # Booking
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
-
-Progetto realizzato interamente con Angular 8 per testare e simulare le tecniche **ajax**.
+Questo progetto è stato generato tramite [Angular CLI](https://github.com/angular/angular-cli) versione 8.3.23 per testare e simulare le tecniche **ajax**.
 
 La web app è molto simile ad un famosissimo sito di prenotazioni online, dalla quale ho preso spunto.
 
 ![alt text](https://github.com/lorenzocastorina/prenota-viaggi/blob/master/screenshots/home.png?raw=true)
 
-Il sito posside delle caratteristiche di responsiveness, abbiamo la modalità Tablet:
+Il sito posside delle caratteristiche di responsiveness, come il formato per dispositivi tablet:
 ![alt text](https://github.com/lorenzocastorina/prenota-viaggi/blob/master/screenshots/tablet.png?raw=true)
 
-E se richiesto la modalità mobile indirizza l'utente verso lo scaricare l'app stessa:
+E se richiesto, la modalità mobile indirizza l'utente verso lo scaricare l'app stessa:
 ![alt text](https://github.com/lorenzocastorina/prenota-viaggi/blob/master/screenshots/mobile.png?raw=true)
 
 Tutti gli annunci sono possibili grazie a chiamate REST API
 ![alt text](https://github.com/lorenzocastorina/prenota-viaggi/blob/master/screenshots/meta.png?raw=true)
-
-
 
 
 ## Development server
