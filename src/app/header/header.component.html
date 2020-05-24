@@ -17,13 +17,21 @@
               <mat-icon>euro</mat-icon>
             </button> -->
           </div>
-          <div class="m10w">
+          <div class="btnGroup">
+            <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Resgistra la tua struttura</button>
+              <button mat-menu-item>Iscriviti</button>
+              <button mat-menu-item>Accedi</button>
+            </mat-menu>
+          </div>
+          <div class="m10w transform">
             <button mat-stroked-button>Resgistra la tua struttura</button>
           </div>
-          <div class="m10w">
+          <div class="m10w transform">
             <button mat-flat-button>Iscriviti</button>
           </div>
-          <div class="m10w">
+          <div class="m10w transform">
             <button mat-flat-button>Accedi</button>
           </div>
         </div>

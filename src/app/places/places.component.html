@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-10 offset-1">
+        <h4 class="title">Le case che piacciono di più agli ospiti</h4>
+        <div class="row">
+            <div class="col-3" *ngFor="let place of places">
+                <img [src]="place.background" class="placeBox">
+                <p class="light"> {{ place.title }} </p>
+                <p class="bold"> A partire da {{place.price}} €</p>
+                <p class="rating"> {{place.rating}}</p>
+            </div>
+        </div>
+    </div>
+</div>

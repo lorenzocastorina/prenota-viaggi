@@ -14,6 +14,11 @@ import { MatFormFieldModule, MatNativeDateModule, MatInputModule} from '@angular
 import { MatSelectModule } from '@angular/material/select';
 import { DestinationsComponent } from './destinations/destinations.component';
 import { TypologiesComponent } from './typologies/typologies.component';
+import {MatMenuModule} from '@angular/material/menu';
+
+import { HttpClientModule } from '@angular/common/http';
+import { AjaxService } from './ajax.service';
+import { PlacesComponent } from './places/places.component';
 
 
 
@@ -23,9 +28,11 @@ import { TypologiesComponent } from './typologies/typologies.component';
     HeaderComponent,
     SearchComponent,
     DestinationsComponent,
-    TypologiesComponent
+    TypologiesComponent,
+    PlacesComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -36,9 +43,14 @@ import { TypologiesComponent } from './typologies/typologies.component';
     MatFormFieldModule,
     MatNativeDateModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatMenuModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    AjaxService
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

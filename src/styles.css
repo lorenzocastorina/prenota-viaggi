@@ -33,3 +33,47 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 button:focus {outline:0;}
+
+
+.banner {
+  display: none;
+}
+
+.btnGroup {
+  display: none;
+}
+
+@media screen and (max-width: 1007px) {
+
+  .transform {
+    display: none;
+  }
+
+  .btnGroup {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .banner {
+    backdrop-filter: blur(8px);
+    height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.7);
+
+      text-align: center;
+      display: flex;
+
+      position: absolute;
+      z-index: 100;
+  }
+
+  h1, h3 {
+    color: #fefefe;
+  }
+
+  .banner > div {
+    margin: auto;
+  }
+}
